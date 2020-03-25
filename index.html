@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="/public/css/styles.css">
+    <title>Dark Sky</title>
+</head>
+<body>
+    <div id="wrap" class="input">
+        <header class="input-header">
+            <h1>Weather App</h1>
+        </header>
+        <section class="input-content">
+            <h2>DarkSky API</h2>
+            <form id="weather-form">
+                <div class="input-content-wrap">
+                    <dl class="inputbox">
+                        <dt class="inputbox-title">City:</dt>
+                        <dd class="inputbox-content">
+                            <input type="text" name="city" id="city" disabled>
+                        </dd>
+                    </dl>
+                </div>
+                <br>
+                <div class="input-content-wrap">
+                    <dl class="inputbox">
+                        <dt class="inputbox-title">Temperature:</dt>
+                        <dd class="inputbox-content">
+                            <input type="text" name="temperature" id="temperature" disabled>
+                        </dd>
+                    </dl>
+                </div>
+                <br>
+                <div class="input-content-wrap">
+                    <dl class="inputbox">
+                        <dt class="inputbox-title">Description:</dt>
+                        <dd class="inputbox-content">
+                            <input type="text" name="description" id="description" disabled>
+                        </dd>
+                    </dl>
+                </div>
+                <br>
+                <input type="button" value="Refresh" id="refresh" class="btn">
+            </form>
+        </section>
+    </div>
+    <!--<div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card" id="main">
+                    <form id="weather-form">
+                        <div class="input-field col s12">
+                            <input type="text" name="city" id="city" disabled>
+                            <label for="city">City</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="temperature" id="temperature" disabled>
+                            <label for="temperature">Temperature (C°)</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="description" id="description" disabled>
+                            <label for="description">Description</label>
+                        </div>
+                        <input type="submit" value="Refresh" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="server.js"></script>
+</body>
+</html>
